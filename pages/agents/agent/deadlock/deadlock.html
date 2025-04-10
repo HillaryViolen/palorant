@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEADLOCK</title>
+    <link rel="stylesheet" href="../../../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/agents-detail.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">PALORANT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../../../../index.html" class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item dropdown">
+                    <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="../../agents.html">AGENTS</a></li>
+                        <li><a href="../../../maps/map/haven/haven.html">MAPS</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="../../../news/news.html" class="navbar__links">NEWS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../../../report-bug/reportBug.html" class="navbar__links">REPORT BUG</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Play now</a>
+                </li>
+            </ul>
+            <div class="navbar__edge"></div>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION -->
+
+    <div class="agent-detail">
+        <div class="agent-detail__container">
+            <div class="agent__image">
+                <img src="../../../../assets/img/agents/Deadlock.png" alt="Deadlock ">
+            </div>
+    
+            <div class="agent-detail__info">
+                <h1 class="agent-name">DEADLOCK</h1>
+                <div class="agent-role">
+                    <img src="../../../../assets/img/role/Sentinel.png" alt="Sentinel">
+                    <span class="role-text">SENTINEL</span>
+                </div>
+                <p class="agent-description">
+                    Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.
+                </p>
+
+                <div class="agent__content">
+                    <div class="video__skills">
+                        <div class="video__frame">
+                            <video autoplay loop muted src="../../../../assets/video/agents/deadlock/ability_1.mp4"></video>
+                        </div>
+                        <div class="skill__description">
+                            <h3 class="skill_name">ANNIHILATION</h3>
+                            <p class="skill_desc">EQUIP a Nanowire Accelerator. FIRE to unleash a pulse of nanowires that captures the first enemy contacted. The cocooned enemy is pulled along a nanowire path and will die if they reach the end, unless they are freed. The nanowire cocoon is destructible.</p>
+                        </div>
+                    </div>
+
+                    <div class="agent__abilities">
+                        <div class="ability" id="ability_1">
+                            <img src="../../../../assets/img/skills/deadlock/Annihilation.jpg" alt="Annihilation">
+                        </div>
+                        <div class="ability" id="ability_2">
+                            <img src="../../../../assets/img/skills/deadlock/Barrier_Mesh.jpg" alt="Barrier Mesh">
+                        </div>
+                        <div class="ability" id="ability_3">
+                            <img src="../../../../assets/img/skills/deadlock/GravNet.jpg" alt="Gravnet">
+                        </div>
+                        <div class="ability" id="ability_4">
+                            <img src="../../../../assets/img/skills/deadlock/Sonic_Sensor.jpg" alt="Sonic Sensor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../scripts/agents-detail.js" type="module"></script>
+    <script src="../../../../scripts/main.js"></script>
+</body>
+</html>

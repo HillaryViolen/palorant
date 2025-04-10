@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Bugs</title>
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="./styles/reportBugs.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">PALORANT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../../index.html" class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item dropdown">
+                    <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="../agents/agents.html">AGENTS</a></li>
+                        <li><a href="../mapS/map/haven/haven.html">MAPS</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="../news/news.html" class="navbar__links">NEWS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./reportBug.html" class="navbar__links">REPORT BUG</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Play now</a>
+                </li>
+            </ul>
+            <div class="navbar__edge"></div>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION -->
+
+
+    <div class="container">
+        <h1>REPORT A BUG</h1>
+        <p>Help improve Palorant by reporting any issues you encounter</p>
+        <div class="report__content">
+            <img  src="../../assets/img/reportBug.png" alt="Vyse">
+            <form id="reportForm" >
+                <div class="report__frame">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" id="inputUsername" required>
+                </div>
+
+                <div class="report__frame">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" id="inputEmail" required>
+                </div>
+
+                <div class="report__frame">
+                    <label for="server">Server</label>
+                    <select id="server" required>
+                        <option value="">Select server</option>
+                        <option value="na">America</option>
+                        <option value="eu">Europe</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                </div>
+
+                <div class="report__frame">
+                    <label for="description">Bug Description</label>
+                    <textarea id="description" placeholder="Bug description" required></textarea>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="followUp" required>
+                    <label for="followUp">I agree to receive follow-up emails</label>
+                </div>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="./scripts/reportBugs.js"></script>
+</body>
+</html>

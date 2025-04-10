@@ -1,0 +1,247 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0c1a;
+    color: #ece8e1;
+    min-height: 100vh;
+}
+
+
+.maps__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.maps__container h1{
+    color: #9747FF;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(151, 71, 255, 0.5);
+}
+
+.maps__navbar{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #9747FF;
+    position: relative;
+}
+
+.maps__navbar::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FFD197, transparent);
+}
+
+.maps-btn{
+    padding: 10px 0;
+    background: transparent;
+    color: #ece8e1;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.maps-btn:hover{
+    color: #FFD197;
+}
+
+.maps-btn:hover::after{
+    width: 100%;
+}
+
+.maps-btn::after{
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FFD197;
+    transition: width 0.3s;
+}
+
+.maps-btn.active{
+    color: #9747FF;
+}
+
+.maps-btn.active::after{
+    width: 100%;
+    background-color: #9747FF;
+}
+
+.maps__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.maps__info {
+    padding: 20px;
+    /* background-color: rgb(25, 16, 46); */
+    border-radius: 8px;
+    /* border: 1px solid #9747FF; */
+    background: transparent;
+}
+
+
+.map-title{
+    color: #ff4655;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.map-title::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #9747FF, transparent)
+}
+
+.map-description{
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ece8e1;
+}
+
+
+.gallery__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.main__container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: 1px solid #9747FF;
+    transition: opacity 0.3s ease;
+}
+
+
+.slider {
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.slider__container {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slide__image {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 100%;
+    scroll-snap-align: start;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.slide__image:hover {
+    opacity: 1;
+}
+
+.slide__image.active {
+    opacity: 1;
+    border: 2px solid #9747FF;
+}
+
+.slide__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 4px; */
+}
+
+.maps__nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.slider__line{
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFD197, transparent);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.maps__prev, .maps__next{
+    background-color: #9747FF;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.maps__prev {
+    left: 0;
+}
+
+.maps__next {
+    right: 0;
+}
+
+.maps__prev img, .maps__next img{   
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.maps__prev:hover, .maps__next:hover{
+    background-color:  #FFD197;
+}
+
+

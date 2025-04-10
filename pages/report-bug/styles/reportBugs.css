@@ -1,0 +1,164 @@
+body{
+    background-color: #ece8e1;
+    color: #0f1023;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container h1{
+    color: #601abc;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container p{
+    color: #8b98a9;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.report__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.report__content img {
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgb(122, 24, 24));
+    animation: float 3s ease-in-out infinite;
+}
+
+/* @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+} */
+
+#reportForm{
+    background-color: #21303d;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgb(14, 14, 14);
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.report__frame{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.report__frame label{
+    display: block;
+    margin-bottom: 8px;
+    color: #ff4655;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.report__frame input, .report__frame select, .report__frame textarea{
+    width: 100%;
+    padding: 12px;
+    background-color: #0f1023;
+    border: 1px solid whitesmoke;
+    appearance: none;
+    color: #6c6f72;
+    font-size: 1rem;
+}
+
+.report__frame textarea{
+    min-height: 15px;
+    resize: vertical;
+}
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.checkbox input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #ff4655;
+}
+
+.checkbox label {
+    color: #ece8e1;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+button[type="submit"] {
+    background-color: #ff4655;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e63746;
+}
+
+@media (max-width: 768px) {
+    .report__content {
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .report__content img {
+        display: none;
+    }
+    
+    #reportForm {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .report__content img {
+        display: none;
+    }
+    
+    #reportForm {
+        padding: 20px;
+    }
+}

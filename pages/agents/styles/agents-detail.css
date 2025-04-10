@@ -1,0 +1,137 @@
+body{
+    background: #0F1923;
+    color: #ece8e1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.agent-detail__container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 2rem;
+    gap: 3rem;
+}
+
+
+.agent__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #1A242D; */
+    padding: 0;
+    flex: 1;
+
+}
+
+.agent__image img{
+    width: 100%;
+    filter: drop-shadow(0 0 20px rgb(26, 26, 26));
+    transform: scale(2);
+}
+
+.agent-detail__info{
+    padding: 2rem;
+    background: #1A242D;
+    flex: 2;
+}
+
+
+.agent-name{
+    font-size: 5rem;
+    color: #E1463D;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.agent-role{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #E1463D;
+    padding: 0.3rem 1.5rem 0.3rem 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.agent-role img{
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.agent-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    color: #8B978F;
+}
+
+.agent__content{
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.video__skills{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video__frame video{
+    width: 100%;
+    height: 350px;
+    /* max-width: 600px; */
+    border: 2px solid #262F38;
+    /* box-shadow: 0 0 20px rgb(96, 24, 24); */
+}
+
+.skill__description{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.skill__description h3{
+    color: #E1463D;
+    margin-bottom: 0.5rem;
+}
+
+
+.agent__abilities{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ability.active img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E1463D;
+    background-color: rgba(225, 70, 61, 0.3);
+}
+
+.ability img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #E1463D;
+    padding: 5px;
+    background-color: #262F38;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.ability img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #E1463D;
+}

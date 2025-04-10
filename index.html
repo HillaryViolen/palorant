@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALORANT</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">PALORANT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./index.html" class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item dropdown">
+                    <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="./pages/agents/agents.html">AGENTS</a></li>
+                        <li><a href="./pages/maps/map/haven/haven.html">MAPS</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="./pages/news/news.html" class="navbar__links">NEWS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./pages/report-bug/reportBug.html" class="navbar__links">REPORT BUG</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Play now</a>
+                </li>
+            </ul>
+            <div class="navbar__edge"></div>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION -->
+
+    <!-- 1st section - main -->
+    <div class="main">
+        <div class="main__container">
+            <div class="video-container">
+                <!-- <video autoplay loop muted>
+                    <source src="assets/video/home-vyseTrailer.mp4" type="video/mp4">
+                </video> -->
+                <img src="./assets/img/home.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 2nd section - banner
+    <div class="banner">
+        <div  class="banner__text">
+            <h1>5V5 <br> TACTICAL <br> SHOOTER</h1>
+            <a href="#" class="play-now">PLAY NOW</a>
+        </div>
+        <div class="banner__video">
+            <div class="video__frame">
+                <video autoplay muted loop>
+                    <source src="assets/video/Vyse Official Gameplay Reveal ⧸⧸ VALORANT.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 3rd section - news -->
+    <div class="news">
+        <h2 class="news__main-title">LATEST NEWS</h2>
+        <div class="news__main">
+            <div class="news__main-container">
+                <img src="./assets/img/news/gameplay.png" alt="Main News Image">
+                <div class="main__text">
+                    <p class="main__date">2025.01.04</p>
+                    <h3>VYSE - GAME UPDATE</h3>
+                    <p>ndjcsdcksjdncksdnc</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="news__section">
+            <div class="news__card">
+                <img src="./assets/img/news/newAgent.png" alt="News 1">
+                <div class="news__card-info">
+                    <p class="news__date">2025.01.03</p>
+                    <h3 class="news__card-title">AGENT PHOENIX BALANCE PATCH</h3>
+                </div>
+            </div>
+            <div class="news__card">
+                <img src="./assets/img/news/trailerEvent.png" alt="News 2">
+                <div class="news__card-info">
+                    <p class="news__date">2025.01.02</p>
+                    <h3 class="news__card-title">AJCKDACNK</h3>
+                </div>
+            </div>
+            <div class="news__card">
+                <img src="./assets/img/news/patchNotes.png" alt="News 3">
+                <div class="news__card-info">
+                    <p class="news__date">2025.01.01</p>
+                    <h3 class="news__card-title">SDKSMDLCSDMC</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4th section - best agent-->
+    <div class="agents">
+        <div class="agents__container">
+            <div class="agents__wrapper">
+                <div class="agent__card">
+                    <div class="card__image">
+                        <img src="./assets/img/cardImage.png" alt="Agent Vyse">
+                        <div class="card__role">
+                            <img src="./assets/img/role/Sentinel.png" alt="Sentinel">
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <h3>SENTINEL</h3>
+                        <h4>VYSE</h4>
+                        <p>"History doesn't remember the almosts. We'll be the best, or we'll be forgotten."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="agents__content">
+                <h2>BEST AGENTS</h2>
+                <h3>CREATIVITY IS YOUR GREATEST WEAPON.</h3>
+                <p>More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.</p>
+                <a href="./pages/agents/agents.html" class="agents__button">VIEW ALL AGENTS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="maps__container">
+        <div class="maps__content">
+            <h2>MAPS</h2>
+            <p class="maps-title">FIGHT IN ALL PARTS OF THE WORLD</p>
+            <p class="maps-description">Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come...</p>
+            <a href="./pages/maps/map/haven/haven.html" class="maps-button">
+                <span class="button-text">VIEW ALL MAPS</span>
+            </a>
+        </div>
+        <div class="maps__all">
+            <div class="maps-slide active">
+                <img src="assets/img/map/bind/Bind.png" alt="Bind Map">
+                <div class="map__info">
+                    <h3>BIND</h3>
+                    <p>Two sites with teleporters connecting them</p>
+                </div>
+            </div>
+
+            <div class="maps-slide">
+                <img src="./assets/img/map/haven/Haven.png" alt="Haven Map">
+                <div class="map__info">
+                    <h3>HAVEN</h3>
+                    <p>The only map with three bomb sites</p>
+                </div>
+            </div>
+
+            <div class="maps-slide">
+                <img src="./assets/img/map/icebox/Icebox.png" alt="Icebox Map">
+                <div class="map__info">
+                    <h3>ICEBOX</h3>
+                    <p>Vertical combat with ziplines</p>
+                </div>
+            </div>
+
+            <div class="maps-slide">
+                <img src="./assets/img/map/breeze/Breeze.png" alt="Breeze Map">
+                <div class="map__info">
+                    <h3>BREEZE</h3>
+                    <p>Tropical island with open areas</p>
+                </div>
+            </div>
+
+            <div class="maps-slide">
+                <img src="./assets/img/map/ascent/Ascent.png" alt="Ascent Map">
+                <div class="map__info">
+                    <h3>ASCENT</h3>
+                    <p>Tropical island with open areas</p>
+                </div>
+            </div>
+
+            <div class="maps__nav">
+                <button class="maps__prev">
+                    <img src="./assets/icons/left_arrow.png" alt="Previous">
+                </button>
+                <button class="maps__next">
+                    <img src="./assets/icons/right_arrow.png" alt="Next">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="./assets/icons/instagram.png" alt="instagram">
+                </div>
+
+                <div class="footer__logo">
+                    <img src="./assets/icons/facebook.png" alt="facebook">
+                </div>
+
+                <div class="footer__logo">
+                    <img src="./assets/icons/x.png" alt="x">
+                </div>
+            </div>
+
+            <div class="footer__tag">
+                <span>RIOT GAMES</span>
+            </div>
+          
+            <div class="copyright">
+                <p>jskcsndckssjhcdsdjcsdjcsjdowiewijicwodncjf</p>
+                <p>cdbvfhbdhfvnsxmalsasjichudicdficndkfcndc</p>
+            </div>
+
+            <div class="footer__time">
+                <span>UTC 2025.04.08 11:39:05</span>
+                <span>WIB 2025.04.08 18:39:05</span>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
