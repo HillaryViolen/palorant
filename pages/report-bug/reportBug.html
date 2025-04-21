@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Bugs</title>
-    <link rel="stylesheet" href="../../styles/navbar.css">
     <link rel="stylesheet" href="./styles/reportBugs.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
 </head>
+
 <body>
 
     <!-- NAVBAR SECTION -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">PALORANT</a>
+            <a href="/" id="navbar__logo">
+                <img src="../../assets/icons/palorant-logo.png" alt="Palorant Logo">
+            </a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
+                <li class="navbar__item" id="home">
                     <a href="../../index.html" class="navbar__links">HOME</a>
                 </li>
-                <li class="navbar__item dropdown">
+                <li class="navbar__item dropdown" id="game-info">
                     <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown__menu">
                         <li><a href="../agents/agents.html">AGENTS</a></li>
-                        <li><a href="../mapS/map/haven/haven.html">MAPS</a></li>
+                        <li><a href="../mapS/map/craven/craven.html">MAPS</a></li>
                     </ul>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item" id="news">
                     <a href="../news/news.html" class="navbar__links">NEWS</a>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item" id="report-bug">
                     <a href="./reportBug.html" class="navbar__links">REPORT BUG</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Play now</a>
+                    <a href="/" class="button">PLAY NOW</a>
                 </li>
             </ul>
             <div class="navbar__edge"></div>
@@ -49,16 +53,16 @@
         <h1>REPORT A BUG</h1>
         <p>Help improve Palorant by reporting any issues you encounter</p>
         <div class="report__content">
-            <img  src="../../assets/img/reportBug.png" alt="Vyse">
-            <form id="reportForm" >
+            <img src="../../assets/img/reportBug.png" alt="Vyse">
+            <form id="reportForm">
                 <div class="report__frame">
                     <label for="username">Username</label>
-                    <input type="text" placeholder="Username" id="inputUsername" required>
+                    <input type="text" placeholder="Username" id="inputUsername">
                 </div>
 
                 <div class="report__frame">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Email" id="inputEmail" required>
+                    <input type="email" placeholder="Email" id="inputEmail">
                 </div>
 
                 <div class="report__frame">
@@ -73,11 +77,11 @@
 
                 <div class="report__frame">
                     <label for="description">Bug Description</label>
-                    <textarea id="description" placeholder="Bug description" required></textarea>
+                    <textarea id="inputDescription" placeholder="Bug description"></textarea>
                 </div>
 
                 <div class="checkbox">
-                    <input type="checkbox" id="followUp" required>
+                    <input type="checkbox" id="followUp">
                     <label for="followUp">I agree to receive follow-up emails</label>
                 </div>
 
@@ -86,7 +90,48 @@
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="../../assets/icons/five-fingers.png" alt="Giot Logo">
+                    <h2>GIOT GAMES</h2>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer-social">
+                        <img src="../../assets/icons/instagram.png" alt="instagram">
+                    </div>
+
+                    <div class="footer-social">
+                        <img src="../../assets/icons/facebook.png" alt="facebook">
+                    </div>
+
+                    <div class="footer-social">
+                        <img src="../../assets/icons/x.png" alt="x">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__tag">
+                <span>PALORANT</span>
+            </div>
+
+            <div class="copyright">
+                <p>2025 Giot Games, Inc GIOT GAMES and any associated logos are trademarks, service marks, and/or</p>
+                <p>registered trademarks of Giot Games, Inc</p>
+            </div>
+
+            <div class="footer__time">
+                <span>UTC 2025.04.08 11:39:05</span>
+                <span>WIB 2025.04.08 18:39:05</span>
+            </div>
+        </div>
+    </footer>
+
     <script src="../../scripts/main.js"></script>
     <script src="./scripts/reportBugs.js"></script>
 </body>
+
 </html>

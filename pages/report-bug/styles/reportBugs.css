@@ -1,30 +1,38 @@
-body{
+body {
     background-color: #ece8e1;
     color: #0f1023;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-.container{
+
+
+#report-bug a {
+    color: #00F0FF;
+}
+
+.container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-.container h1{
+.container h1 {
     color: #601abc;
     font-size: 3rem;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: 'Russo-one', sans-serif;
+    font-weight: 100;
 }
 
-.container p{
+.container p {
     color: #8b98a9;
     margin-bottom: 30px;
     font-size: 1.2rem;
+    font-family: 'Exo-2', sans-serif;
 }
 
 .report__content {
@@ -39,17 +47,39 @@ body{
     width: 400px;
     height: 600px;
     object-fit: contain;
-    filter: drop-shadow(0 0 10px rgb(122, 24, 24));
-    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #016b73);
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 } */
 
-#reportForm{
+#reportForm {
     background-color: #21303d;
     padding: 30px;
     box-shadow: 0 4px 12px rgb(14, 14, 14);
@@ -58,38 +88,51 @@ body{
     max-width: 500px;
 }
 
-.report__frame{
+.report__frame {
     margin-bottom: 20px;
     text-align: left;
 }
 
-.report__frame label{
+.report__frame label {
     display: block;
     margin-bottom: 8px;
-    color: #ff4655;
+    color: #00F0FF;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    font-family: 'Kanit', sans-serif;
 }
 
-.report__frame input, .report__frame select, .report__frame textarea{
+.report__frame input,
+.report__frame select,
+.report__frame textarea {
     width: 100%;
     padding: 12px;
     background-color: #0f1023;
     border: 1px solid whitesmoke;
     appearance: none;
-    color: #6c6f72;
+    color: #ece8e1;
     font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+
 }
 
-.report__frame textarea{
+.report__frame textarea {
     min-height: 15px;
     resize: vertical;
 }
 
+.report__frame select {
+    color: #6c6f72;
+}
 
-.checkbox{
+.report__frame select:valid {
+    color: #ece8e1;
+}
+
+.checkbox {
     display: flex;
     align-items: center;
     margin: 25px 0;
@@ -108,11 +151,12 @@ body{
     text-transform: none;
     font-size: 1rem;
     letter-spacing: normal;
+    font-family: 'Exo-2', sans-serif;
 }
 
 button[type="submit"] {
-    background-color: #ff4655;
-    color: white;
+    background-color: #016b73;
+    color: #ece8e1;
     border: none;
     padding: 14px 28px;
     font-size: 1.1rem;
@@ -126,7 +170,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #e63746;
+    background-color: #059aa5;
 }
 
 @media (max-width: 768px) {
@@ -135,21 +179,21 @@ button[type="submit"]:hover {
         width: 100%;
         align-items: center;
     }
-    
+
     .report__content img {
         display: none;
     }
-    
+
     #reportForm {
         width: 70%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .container {
         padding: 0 15px;
     }
-    
+
     .container h1 {
         font-size: 2rem;
     }
@@ -157,7 +201,7 @@ button[type="submit"]:hover {
     .report__content img {
         display: none;
     }
-    
+
     #reportForm {
         padding: 20px;
     }

@@ -1,6 +1,6 @@
 export const agentsData = [
     {
-        name: "jett",
+        name: "jeht",
         abilities: [
             {
                 id: 'ability_1',
@@ -25,7 +25,7 @@ export const agentsData = [
         ]
     },
     {
-        name: "deadlock",
+        name: "deathlog",
         abilities: [
             {
                 id: 'ability_1',
@@ -50,7 +50,7 @@ export const agentsData = [
         ]
     },
     {
-        name: "phoenix",
+        name: "phynex",
         abilities: [
             {
                 id: 'ability_1',
@@ -75,7 +75,7 @@ export const agentsData = [
         ]
     },
     {
-        name: "vyse",
+        name: "vyz",
         abilities: [
             {
                 id: 'ability_1',
@@ -100,7 +100,7 @@ export const agentsData = [
         ]
     },
     {
-        name: "raze",
+        name: "raez",
         abilities: [
             {
                 id: 'ability_1',
@@ -125,7 +125,7 @@ export const agentsData = [
         ]
     },
     {
-        name: "chamber",
+        name: "chameon",
         abilities: [
             {
                 id: 'ability_1',

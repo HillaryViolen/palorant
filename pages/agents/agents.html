@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,38 @@
     <link rel="stylesheet" href="../../styles/navbar.css">
     <link rel="stylesheet" href="./styles/agents.css">
 </head>
+
 <body>
     <!-- NAVBAR SECTION -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">PALORANT</a>
+            <a href="/" id="navbar__logo">
+                <img src="../../assets/icons/palorant-logo.png" alt="Palorant Logo">
+            </a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
+                <li class="navbar__item" id="home">
                     <a href="../../index.html" class="navbar__links">HOME</a>
                 </li>
-                <li class="navbar__item dropdown">
+                <li class="navbar__item dropdown" id="game-info">
                     <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown__menu">
                         <li><a href="./agents.html">AGENTS</a></li>
-                        <li><a href="../maps/map/haven/haven.html">MAPS</a></li>
+                        <li><a href="../maps/map/craven/craven.html">MAPS</a></li>
                     </ul>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item" id="news">
                     <a href="../news/news.html" class="navbar__links">NEWS</a>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item" id="report-bug">
                     <a href="../report-bug/reportBug.html" class="navbar__links">REPORT BUG</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Play now</a>
+                    <a href="/" class="button">PLAY NOW</a>
                 </li>
             </ul>
             <div class="navbar__edge"></div>
@@ -57,152 +61,188 @@
     <div class="agents__container">
         <div class="agents__frame">
 
-            <a href="./agent/jett/jett.html" class="agents__card">
+            <a href="./agent/jeht/jeht.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Jett.png" alt="Jett" class="agents__image">
+                    <img src="../../assets/img/agents/Jeht.png" alt="Jeht" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">JETT</h2>
+                    <h2 class="agents__name">JEHT</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/jett/Blade_Storm.jpg" alt="Blade Storm">
+                        <img src="../../assets/img/skills/jeht/Blade_Storm.jpg" alt="Blade Storm">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/jett/Cloudburst.jpg" alt="Cloudburst">
+                        <img src="../../assets/img/skills/jeht/Cloudburst.jpg" alt="Cloudburst">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/jett/Tailwind.jpg" alt="Tailwind">
+                        <img src="../../assets/img/skills/jeht/Tailwind.jpg" alt="Tailwind">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/jett/Updraft.jpg" alt="Updraft">
+                        <img src="../../assets/img/skills/jeht/Updraft.jpg" alt="Updraft">
                     </div>
                 </div>
             </a>
 
-            <a href="./agent/deadlock/deadlock.html" class="agents__card">
+            <a href="./agent/deathlog/deathlog.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Deadlock.png" alt="Deadlock" class="agents__image">
+                    <img src="../../assets/img/agents/Deathlog.png" alt="Deathlog" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">DEADLOCK</h2>
+                    <h2 class="agents__name">DEATHLOG</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/deadlock/Annihilation.jpg" alt="Annihilation">
+                        <img src="../../assets/img/skills/deathlog/Annihilation.jpg" alt="Annihilation">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/deadlock/Barrier_Mesh.jpg" alt="Barrier Mesh">
+                        <img src="../../assets/img/skills/deathlog/Barrier_Mesh.jpg" alt="Barrier Mesh">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/deadlock/GravNet.jpg" alt="GravNet">
+                        <img src="../../assets/img/skills/deathlog/GravNet.jpg" alt="GravNet">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/deadlock/Sonic_Sensor.jpg" alt="Sonic Sensor">
+                        <img src="../../assets/img/skills/deathlog/Sonic_Sensor.jpg" alt="Sonic Sensor">
                     </div>
                 </div>
             </a>
 
-            <a href="./agent/phoenix/phoenix.html" class="agents__card">
+            <a href="./agent/phynex/phynex.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Phoenix.png" alt="Phoenix" class="agents__image">
+                    <img src="../../assets/img/agents/Phynex.png" alt="Phynex" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">PHOENIX</h2>
+                    <h2 class="agents__name">PHYNEX</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/phoenix/Blaze.jpg" alt="Blaze">
+                        <img src="../../assets/img/skills/phynex/Blaze.jpg" alt="Blaze">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/phoenix/Curveball.jpg" alt="Curveball">
+                        <img src="../../assets/img/skills/phynex/Curveball.jpg" alt="Curveball">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/phoenix/Hot_Hands.jpg" alt="Hot Hands">
+                        <img src="../../assets/img/skills/phynex/Hot_Hands.jpg" alt="Hot Hands">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/phoenix/Run_it_Back.jpg" alt="Run it back">
+                        <img src="../../assets/img/skills/phynex/Run_it_Back.jpg" alt="Run it back">
                     </div>
                 </div>
             </a>
 
-            <a href="./agent/vyse/vyse.html" class="agents__card">
+            <a href="./agent/vyz/vyz.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Vyse.png" alt="Vyse" class="agents__image">
+                    <img src="../../assets/img/agents/Vyz.png" alt="Vyz" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">VYSE</h2>
+                    <h2 class="agents__name">VYZ</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/vyse/Arc_Rose.jpg" alt="Arc Rose">
+                        <img src="../../assets/img/skills/vyz/Arc_Rose.jpg" alt="Arc Rose">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/vyse/Razorvine.jpg" alt="Razorvine">
+                        <img src="../../assets/img/skills/vyz/Razorvine.jpg" alt="Razorvine">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/vyse/Shear.jpg" alt="Shear">
+                        <img src="../../assets/img/skills/vyz/Shear.jpg" alt="Shear">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/vyse/Steel_Garden.jpg" alt="Steel Garden">
+                        <img src="../../assets/img/skills/vyz/Steel_Garden.jpg" alt="Steel Garden">
                     </div>
                 </div>
             </a>
 
-            <a href="./agent/raze/raze.html" class="agents__card">
+            <a href="./agent/raez/raez.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Raze.png" alt="Raze" class="agents__image">
+                    <img src="../../assets/img/agents/Raez.png" alt="Raez" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">RAZE</h2>
+                    <h2 class="agents__name">RAEZ</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/raze/Blast_Pack.jpg" alt="Blast Pack">
+                        <img src="../../assets/img/skills/raez/Blast_Pack.jpg" alt="Blast Pack">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/raze/Boom_Bot.jpg" alt="Boom Bot">
+                        <img src="../../assets/img/skills/raez/Boom_Bot.jpg" alt="Boom Bot">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/raze/Paint_Shells.jpg" alt="Paint Shells">
+                        <img src="../../assets/img/skills/raez/Paint_Shells.jpg" alt="Paint Shells">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/raze/Showstopper.jpg" alt="Showstopper">
+                        <img src="../../assets/img/skills/raez/Showstopper.jpg" alt="Showstopper">
                     </div>
                 </div>
             </a>
 
-            <a href="./agent/chamber/chamber.html" class="agents__card">
+            <a href="./agent/chameon/chameon.html" class="agents__card">
                 <div class="image__wrapper">
-                    <img src="../../assets/img/agents/Chamber.png" alt="Chamber" class="agents__image">
+                    <img src="../../assets/img/agents/Chameon.png" alt="Chameon" class="agents__image">
                 </div>
                 <div class="agents__detail">
-                    <h2 class="agents__name">CHAMBER</h2>
+                    <h2 class="agents__name">CHAMEON</h2>
                 </div>
                 <div class="agents__skills">
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/chamber/Headhunter.jpg" alt="Headhunter">
+                        <img src="../../assets/img/skills/chameon/Headhunter.jpg" alt="Headhunter">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/chamber/Rendezvous.jpg" alt="Rendezvous">
+                        <img src="../../assets/img/skills/chameon/Rendezvous.jpg" alt="Rendezvous">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/chamber/Tour_De_Force.jpg" alt="Tour De Force">
+                        <img src="../../assets/img/skills/chameon/Tour_De_Force.jpg" alt="Tour De Force">
                     </div>
                     <div class="skill__icon">
-                        <img src="../../assets/img/skills/chamber/Trademark.jpg" alt="Trademark">
+                        <img src="../../assets/img/skills/chameon/Trademark.jpg" alt="Trademark">
                     </div>
                 </div>
             </a>
-
-            
-            
-
-           
         </div>
     </div>
 
-    <script src="../../scripts/main.js"></script>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="../../assets/icons/five-fingers.png" alt="Giot Logo">
+                    <h2>GIOT GAMES</h2>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer-social">
+                        <img src="../../assets/icons/instagram.png" alt="instagram">
+                    </div>
     
+                    <div class="footer-social">
+                        <img src="../../assets/icons/facebook.png" alt="facebook">
+                    </div>
+    
+                    <div class="footer-social">
+                        <img src="../../assets/icons/x.png" alt="x">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__tag">
+                <span>GIOT GAMES</span>
+            </div>
+
+            <div class="copyright">
+                <p>2025 Giot Games, Inc GIOT GAMES and any associated logos are trademarks, service marks, and/or</p>
+                <p>registered trademarks of Giot Games, Inc</p>
+            </div>
+
+            <div class="footer__time">
+                <span>UTC 2025.04.08 11:39:05</span>
+                <span>WIB 2025.04.08 18:39:05</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+
 </body>
+
 </html>

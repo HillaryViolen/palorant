@@ -1,36 +1,40 @@
-body{
-    font-family: 'Tungsten-Bold', 'Arial Narrow', sans-serif;
-    background-color: #ECE8E1;
+body {
+    /* font-family: 'Tungsten-Bold', 'Arial Narrow', sans-serif; */
+    background-color: #0C0C17;
     color: #0f1923;
     padding: 0;
     margin: 0;
     min-height: 100vh;
 }
 
+#game-info a {
+    color: #00F0FF;
+}
 
-.agents__header{
+.agents__header {
     text-align: left;
     padding: 80px 5% 40px;
     /* background: linear-gradient(to bottom, #0a0a16, #1a242d); */
-    background: rgb(25, 16, 46);
+    background: #0C0C17;
 }
 
-.agents__header h1{
+.agents__header h1 {
     font-size: 3rem;
     color: whitesmoke;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 3px;
     position: relative;
+    font-family: 'Russo-one', sans-serif;
 }
 
-.agents__container{
+.agents__container {
     width: 100%;
     padding: 20px 5%;
     background: #ECE8E1;
 }
 
-.agents__frame{
+.agents__frame {
     display: grid;
     /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -40,28 +44,30 @@ body{
     /* overflow-x: auto; */
 }
 
-.agents__card{
+.agents__card {
     /* background: linear-gradient(to bottom, #16213E, #3a3a3a); */
-    background: #16213E;
-    border-radius: 8px;
+    background: #0C0C17;
+    /* border-radius: 8px; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
-    border: 2px solid whitesmoke;
-    box-shadow: 0 4px 8px black; 
+    border: 3px solid rgb(56, 55, 55);
+    box-shadow: 0 4px 8px black;
 }
 
-.agents__card:hover{
+.agents__card:hover {
     transform: translateY(-10px);
-    box-shadow: inset 0 0 30px rgb(164, 75, 12), 0 10px 20px rgba(255, 70, 85, 0.3);
-    border-color: #ff4655;
+    box-shadow: inset 0 0 30px #00F0FF, 0 10px 20px #016b73;
+    border-color: #00F0FF;
 }
 
-.image__wrapper{
+.image__wrapper {
     height: 300px;
 }
 
-.agents__image{
+.agents__image {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -71,12 +77,12 @@ body{
 }
 
 
-.agents__card:hover .agents__image{
+.agents__card:hover .agents__image {
     transform: scale(1.15);
     filter: brightness(1.1);
 }
 
-.agents__detail{
+.agents__detail {
     padding: 20px;
     text-align: center;
     position: relative;
@@ -84,23 +90,33 @@ body{
     background-color: linear-gradient(to top, rgba(15, 25, 35, 0.9), transparent);
 }
 
-.agents__card:hover .agents__detail{
+.agents__card:hover .agents__detail {
     transform: translateY(-40px);
     transition: transform 0.3s ease;
 }
 
-.agents__name{
+.agents__name {
     font-size: 2.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 5px;
     color: #9747FF;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50px;
+    /* font-family: 'Gunplay', sans-serif;
+    font-weight: 100; */
+    /* font-family: 'Russo-one', sans-serif;
+    font-weight: 100; */
+    font-family: 'Kanit', sans-serif;
 }
 
 
-.agents__skills{
+.agents__skills {
     display: none;
     justify-content: space-around;
     padding: 15px;
@@ -112,12 +128,12 @@ body{
 }
 
 
-.agents__card:hover .agents__skills{
+.agents__card:hover .agents__skills {
     display: flex;
     animation: slideUp 0.5s ease-out;
 }
 
-.skill__icon{
+.skill__icon {
     width: 40px;
     height: 40px;
     display: flex;
@@ -128,8 +144,9 @@ body{
     font-weight: bold;
 }
 
-.skill__icon img{
+.skill__icon img {
     width: 90%;
     height: 90%;
     object-fit: cover;
 }
+

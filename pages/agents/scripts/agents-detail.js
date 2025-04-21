@@ -12,7 +12,6 @@ const getAgent = agentsData.find((agentData) =>{
 })
 
 
-
 abilities.forEach((ability)=>{
     const agentSkill = ability.id.toLowerCase();
     ability.addEventListener("click", (e)=>{
@@ -25,5 +24,11 @@ abilities.forEach((ability)=>{
         
         skillName.innerHTML = getAbility.name;
         skillDesc.innerHTML = getAbility.description;
-    })
-})
+
+        abilities.forEach((abil) => abil.classList.remove("active"));
+
+        ability.classList.add("active");
+        });
+});
+// });
+

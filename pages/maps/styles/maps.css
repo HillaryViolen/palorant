@@ -1,20 +1,23 @@
-body{
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0f0c1a;
-    color: #ece8e1;
+    background-color: #0C0C17;
+    color: #0f0c1a;
     min-height: 100vh;
 }
 
+#game-info a {
+    color: #00F0FF;
+}
 
-.maps__container{
+.maps__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.maps__container h1{
+.maps__container h1 {
     color: #9747FF;
     text-align: center;
     font-size: 3rem;
@@ -22,9 +25,11 @@ body{
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(151, 71, 255, 0.5);
+    font-family: 'Russo-one', sans-serif;
+    font-family: 100;
 }
 
-.maps__navbar{
+.maps__navbar {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -33,19 +38,20 @@ body{
     padding-bottom: 15px;
     border-bottom: 2px solid #9747FF;
     position: relative;
+    font-family: 'Exo-2', sans-serif;
 }
 
-.maps__navbar::after{
+.maps__navbar::after {
     content: '';
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, #FFD197, transparent);
+    background: linear-gradient(90deg, transparent, #FFAA5C, transparent);
 }
 
-.maps-btn{
+.maps-btn {
     padding: 10px 0;
     background: transparent;
     color: #ece8e1;
@@ -60,51 +66,49 @@ body{
     text-decoration: none;
 }
 
-.maps-btn:hover{
-    color: #FFD197;
+.maps-btn:hover {
+    color: #016b73;
 }
 
-.maps-btn:hover::after{
+.maps-btn:hover::after {
     width: 100%;
 }
 
-.maps-btn::after{
+.maps-btn::after {
     content: '';
     position: absolute;
     bottom: -17px;
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #FFD197;
+    background-color: #016b73;
     transition: width 0.3s;
 }
 
-.maps-btn.active{
-    color: #9747FF;
+.maps-btn.active {
+    color: #016b73;
 }
 
-.maps-btn.active::after{
+.maps-btn.active::after {
     width: 100%;
     background-color: #9747FF;
 }
 
-.maps__content{
+.maps__content {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .maps__info {
     padding: 20px;
-    /* background-color: rgb(25, 16, 46); */
-    border-radius: 8px;
-    /* border: 1px solid #9747FF; */
     background: transparent;
 }
 
 
-.map-title{
-    color: #ff4655;
+.map-title {
+    color: #00F0FF;
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 20px;
@@ -112,9 +116,12 @@ body{
     letter-spacing: 1px;
     position: relative;
     display: inline-block;
+    text-shadow: 0 0 15px #016b73;
+    font-family: 'Russo-one', sans-serif;
+    font-weight: lighter;
 }
 
-.map-title::after{
+.map-title::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -124,10 +131,10 @@ body{
     background: linear-gradient(90deg, #9747FF, transparent)
 }
 
-.map-description{
+.map-description {
     line-height: 1.8;
     font-size: 1.1rem;
-    color: #ece8e1;
+    color: #9d9c99;
 }
 
 
@@ -148,7 +155,7 @@ body{
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border: 1px solid #9747FF;
+    border: 1px solid #00F0FF;
     transition: opacity 0.3s ease;
 }
 
@@ -156,7 +163,6 @@ body{
 .slider {
     width: 100%;
     height: 130px;
-    background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden;
     margin-bottom: 15px;
 }
@@ -166,8 +172,9 @@ body{
     height: 100%;
     gap: 10px;
     padding: 10px;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
+    border: none;
 }
 
 .slide__image {
@@ -186,17 +193,17 @@ body{
 
 .slide__image.active {
     opacity: 1;
-    border: 2px solid #9747FF;
+    border: 2px solid #00F0FF;
 }
 
 .slide__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 4px; */
 }
 
-.maps__nav{
+
+.maps__nav {
     position: relative;
     width: 100%;
     display: flex;
@@ -205,14 +212,15 @@ body{
     margin-top: 10px;
 }
 
-.slider__line{
+.slider__line {
     height: 2px;
-    background: linear-gradient(90deg, transparent, #FFD197, transparent);
+    background: linear-gradient(90deg, transparent, #FFAA5C, transparent);
     width: 80%;
     margin: 0 auto;
 }
 
-.maps__prev, .maps__next{
+.maps__prev,
+.maps__next {
     background-color: #9747FF;
     border: none;
     width: 40px;
@@ -234,14 +242,93 @@ body{
     right: 0;
 }
 
-.maps__prev img, .maps__next img{   
+.maps__prev img,
+.maps__next img {
     width: 24px;
     height: 24px;
     filter: brightness(0) invert(1);
 }
 
-.maps__prev:hover, .maps__next:hover{
-    background-color:  #FFD197;
+.maps__prev:hover,
+.maps__next:hover {
+    background-color: #016b73;
 }
 
+.maps__dropdown {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .map-title {
+        display: none;
+    }
+
+    .maps__navbar {
+        display: none;
+    }
+
+    .maps__dropdown {
+        display: block;
+        margin: 0 auto 30px;
+        width: 100%;
+        position: relative;
+    }
+
+    .main__container img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .maps__dropdown select{
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #00F0FF;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #9747FF;
+        text-align: left;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s;
+        padding-left: 10px;
+    }
+
+    .maps__dropdown::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(100deg, #FFAA5C, transparent);
+    }
+
+    .maps__dropdown option {
+        background-color: #0f0c1a;
+        color: #00F0FF;
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .maps__dropdown option:hover {
+        background-color: #016b73;
+        color: #0f0c1a;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .maps__info{
+        padding: 0px;
+    }
+
+    .map-description{
+        font-size: 0.9rem;
+    }
+}

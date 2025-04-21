@@ -1,21 +1,63 @@
-/* Base Styles */
 body {
     font-family: 'Tungsten-Bold', 'Arial Narrow', sans-serif;
-    background-color: #0f1923;
-    color: #ece8e1;
+    background-color: #0C0C17;
+    color: #0f1923;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* Container */
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../assets/fonts/ethnocentric\ rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo-2';
+    src: url('../assets/fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Russo-one';
+    src: url('../assets/fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gunplay';
+    src: url('../assets/fonts/gunplay\ rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../assets/fonts/Kanit-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kanit-bold';
+    src: url('../assets/fonts/Kanit-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#news a {
+    color: #00F0FF;
+}
+
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-/* Header */
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -23,81 +65,135 @@ body {
 
 .header h1 {
     font-size: 4rem;
-    color: #ff4655;
+    background: linear-gradient(to bottom, #016b73, #00F0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: "Russo-one", sans-serif;
+    font-weight: 100;
 }
 
 .header p {
     font-size: 1.5rem;
-    color: #8b98a9;
+    color: #601abc;
+    font-family: 'Exo-2', sans-serif;
 }
 
-/* Divider */
 .divider {
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #ff4655, transparent);
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #FFD197, transparent);
     margin: 30px 0;
-    border: none;
+    width: 100%;
+
 }
 
-/* Content */
+.detail__image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(15, 25, 35, 0.1);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    filter: blur(8px);
+    opacity: 0.6;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.news-image {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    max-width: 800px;
+    object-fit: contain;
+}
+
+
 .content {
+    width: 100%;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .copyright {
+    width: 100%;
     font-size: 0.9rem;
-    color: #8b98a9;
+    color: #6e7278;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Exo-2', sans-serif;
 }
 
 .content p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    color: #ece8e1;
+    font-family: 'Exo-2', sans-serif;
 }
 
-/* Reward Sections */
 .reward-section {
-    background-color: rgba(21, 34, 56, 0.6);
-    border-radius: 8px;
+    background-color: #ece8e1;
     padding: 25px;
     margin-bottom: 30px;
-    border-left: 4px solid #ff4655;
+    filter: drop-shadow(-20px 20px 0px #00F0FF);
+    box-shadow: 0 2px 10px rgb(8, 8, 8);
 }
 
 .reward-section h2 {
-    color: #ff4655;
+    color: #016b73;
     font-size: 2.2rem;
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-family: 'Kanit-bold', sans-serif;
+    font-weight: bold;
 }
 
-.reward-section p {
+.reward-description {
     font-size: 1.1rem;
     margin-bottom: 15px;
+    color: #0f1923;
+    font-family: 'Exo-2', sans-serif;
 }
 
-/* Highlight Box */
 .highlight-box {
-    background-color: rgba(15, 25, 35, 0.8);
-    border-radius: 6px;
+    background-color: #0f1923;
+    border-radius: 4px; 
     padding: 20px;
     margin-top: 20px;
 }
 
 .highlight-box h3 {
-    color: #8b98a9;
+    color: #9747ff;
     font-size: 1.3rem;
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
 }
 
-/* Lists */
+.highlight-box p{
+    color: #FFD197;
+    font-family: 'Exo-2', sans-serif;
+}
+
 ul {
     padding-left: 20px;
     margin: 15px 0;
@@ -106,19 +202,53 @@ ul {
 li {
     margin-bottom: 8px;
     font-size: 1.1rem;
+    color: #ece8e1;
+    font-family: 'Exo-2';
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2.5rem;
     }
-    
+
     .header p {
         font-size: 1.2rem;
     }
-    
+
     .reward-section {
         padding: 15px;
     }
+}
+
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .reward-section {
+        padding: 15px;
+    }
+
+    .reward-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .reward-section p {
+        font-size: 1rem;
+    }
+
+    .highlight-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .highlight-box p,
+    .highlight-box li {
+        font-size: 1rem;
+    }
+
 }

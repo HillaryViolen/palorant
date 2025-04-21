@@ -1,66 +1,96 @@
-body{
-    background: #0F1923;
+body {
+    background: #0C0C17;
     color: #ece8e1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.agent-detail__container{
+#game-info a {
+    color: #00F0FF;
+}
+
+.agent-detail {
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.agent-detail__container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     max-width: 1400px;
     margin: auto;
+    height: 100%;
     padding: 0 2rem;
-    gap: 3rem;
+    align-items: flex-start;
 }
 
 
-.agent__image{
+.agent__image {
+    position: relative;
+    width: 60%;
+    height: 700px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #1A242D; */
-    padding: 0;
-    flex: 1;
-
+    justify-content: end;
+    align-items: end;
+    margin-right: -50px;
 }
 
-.agent__image img{
+.agent__image img {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    filter: drop-shadow(0 0 20px rgb(26, 26, 26));
-    transform: scale(2);
+    filter: drop-shadow(0 0 20px rgb(39, 38, 38));
+    transform: scale(1.5);
+    bottom: 5%;
 }
 
-.agent-detail__info{
+.agent-background {
+    position: absolute;
+    width: 45%;
+    background-color: black;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+    z-index: 1;
+    border: 5px dashed #601abc;
+    height: 700px;
+    right: 29%;
+    bottom: -6%;
+}
+
+.agent-detail__info {
     padding: 2rem;
-    background: #1A242D;
-    flex: 2;
+    background: transparent;
+    width: 40%;
 }
 
 
-.agent-name{
+.agent-name {
     font-size: 5rem;
-    color: #E1463D;
+    background: linear-gradient(to bottom, #016b73, #00F0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: 'Gunplay', sans-serif;
+    z-index: 10;
 }
 
-.agent-role{
+.agent-role {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #E1463D;
+    background: #9747FF;
     padding: 0.3rem 1.5rem 0.3rem 0.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-family: 'Exo-2', sans-serif;
 }
 
-.agent-role img{
+.agent-role img {
     width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
@@ -69,69 +99,319 @@ body{
 .agent-description {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     opacity: 0.9;
     color: #8B978F;
 }
 
-.agent__content{
-    display: flex;
-    margin-top: 2rem;
-    gap: 2rem;
+.agent__content {
     width: 100%;
-    max-width: 1000px;
-}
-
-.video__skills{
-    flex: 4;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.video__frame video{
+.video__skills {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 350px;
-    /* max-width: 600px; */
-    border: 2px solid #262F38;
-    /* box-shadow: 0 0 20px rgb(96, 24, 24); */
+    max-width: 550px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-.skill__description{
+.video__frame-wrapper {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+
+.video__background {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #9747FF;
+    z-index: 0;
+}
+
+.video__frame {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgb(30, 29, 29);
+    border: none;
+}
+
+.video__frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill__description {
     margin-top: 1rem;
     text-align: center;
 }
 
-.skill__description h3{
-    color: #E1463D;
+.skill__description h3 {
+    color: #FFD197;
+    margin-bottom: 0.5rem;
+    font-family: 'Russo-one', sans-serif;
+    font-weight: 100;
+}
+
+.skill__description p {
+    color: #ece8e1;
     margin-bottom: 0.5rem;
 }
 
 
-.agent__abilities{
-    flex: 1;
+.agent__abilities {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    z-index: 10;
 }
 
-.ability.active img {
+/* .ability.active img {
     transform: scale(1.1);
     box-shadow: 0 0 15px #E1463D;
     background-color: rgba(225, 70, 61, 0.3);
+} */
+
+.ability {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #00F0FF;
 }
 
-.ability img{
-    width: 60px;
-    height: 60px;
-    border: 2px solid #E1463D;
-    padding: 5px;
-    background-color: #262F38;
+.ability img {
+    filter: brightness(0) invert(1);
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.ability img:hover{
+.ability.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00F0FF;
+}
+
+.ability:hover {
+    box-shadow: 0 0 15px #016b73;
+}
+
+.ability img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #E1463D;
+}
+
+.agent__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .agent-description{
+        font-size: 1rem;
+    }
+    .agent-background {
+        width: 50%;
+        height: 60%;
+        bottom: 30px;
+    }
+
+    .video__frame{
+        width: 100%;
+        height: 100%;
+    }
+
+    .video__frame-wrapper {
+        height: 120%;
+        width: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .agent__content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video__background {
+        top: 8px;
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .agent-detail {
+        padding-top: 80px;
+    }
+
+    .agent-detail__container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    .agent__image,
+    .agent-detail__info {
+        width: 100%;
+    }
+
+    .agent__image {
+        height: 500px;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .agent__image img {
+        transform: scale(1.2);
+    }
+
+    .agent-name {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    .agent-role {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .agent-description {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .agent__abilities {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .agent-background {
+        width: 45%;
+        height: 105%;
+        bottom: 30px;
+    }
+
+    .video__frame-wrapper {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .agent__content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video__background {
+        top: 15px;
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .agent-detail {
+        padding-top: 70px;
+    }
+
+    .agent-detail__container {
+        padding: 0 1rem;
+    }
+
+    .agent__image {
+        height: 400px;
+    }
+
+    .agent__image img {
+        transform: scale(1.3);
+    }
+
+    .agent-name {
+        font-size: 2.8rem;
+    }
+
+    .agent-role {
+        font-size: 1rem;
+        padding: 0.2rem 1rem 0.2rem 0.6rem;
+    }
+
+    .agent-description {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .agent__abilities {
+        gap: 1.3rem;
+    }
+
+    .ability {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ability img {
+        width: 50px;
+        height: 50px;
+        padding: 7px;
+    }
+
+    .video__frame-wrapper {
+        height: 60%;
+        width: 70%;
+    }
+
+    .video__background {
+        top: 10px;
+        left: -10px;
+    }
+
+    .skill__description h3 {
+        font-size: 1rem;
+    }
+
+    .skill__description p {
+        font-size: 0.9rem;
+    }
+
+    .agent__detail {
+        gap: 40px;
+    }
+
+    .agent-background {
+        width: 45%;
+        height: 90%;
+        bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .agent-background {
+        width: 45%;
+        height: 75%;
+        bottom: 10px;
+    }
 }

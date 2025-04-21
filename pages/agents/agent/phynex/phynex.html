@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOENIX</title>
+    <link rel="stylesheet" href="../../../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/agents-detail.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="../../../../assets/icons/palorant-logo.png" alt="Palorant Logo">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item" id="home">
+                    <a href="../../../../index.html" class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item dropdown" id="game-info">
+                    <a href="#" class="navbar__links">GAME INFO<span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown__menu">
+                        <li><a href="../../agents.html">AGENTS</a></li>
+                        <li><a href="../../../maps/map/craven/craven.html">MAPS</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item" id="news">
+                    <a href="../../../news/news.html" class="navbar__links">NEWS</a>
+                </li>
+                <li class="navbar__item" id="report-bug">
+                    <a href="../../../report-bug/reportBug.html" class="navbar__links">REPORT BUG</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">PLAY NOW</a>
+                </li>
+            </ul>
+            <div class="navbar__edge"></div>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION -->
+
+    <div class="agent-detail">
+        <div class="agent-detail__container">
+            <div class="agent__image">
+                <div class="agent-background"></div>
+                <img src="../../../../assets/img/agents/Phynex.png" alt="Phynex">
+            </div>
+
+            <div class="agent-detail__info">
+                <h1 class="agent-name">PHYNEX</h1>
+                <div class="agent-role">
+                    <img src="../../../../assets/img/role/Initiator.png" alt="Initiator">
+                    <span class="role-text">INITIATOR</span>
+                </div>
+                <p class="agent-description">
+                    Hailing from the U.K., Phynex's star power shines through in his fighting style, igniting the
+                    battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own
+                    terms.
+                </p>
+                <div class="agent__detail">
+                    <div class="agent__abilities">
+                        <div class="ability active" id="ability_1">
+                            <img src="../../../../assets/img/skills/phynex/Blaze.jpg" alt="Blaze">
+                        </div>
+                        <div class="ability" id="ability_2">
+                            <img src="../../../../assets/img/skills/phynex/Curveball.jpg" alt="Curveball">
+                        </div>
+                        <div class="ability" id="ability_3">
+                            <img src="../../../../assets/img/skills/phynex/Hot_Hands.jpg" alt="Hot Hands">
+                        </div>
+                        <div class="ability" id="ability_4">
+                            <img src="../../../../assets/img/skills/phynex/Run_it_Back.jpg" alt="Run it back">
+                        </div>
+                    </div>
+
+                    <div class="agent__content">
+                        <div class="video__skills">
+                            <div class="video__frame-wrapper">
+                                <div class="video__background"></div>
+                                <div class="video__frame">
+                                    <video autoplay loop muted src="../../../../assets/video/agents/phynex/ability_1.mp4"></video>
+                                </div>
+                            </div>
+                            <div class="skill__description">
+                                <h3 class="skill_name">BLAZE</h3>
+                                <p class="skill_desc">EQUIP a flame wall. FIRE to create a line of flame that moves
+                                    forward...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="../../../../assets/icons/five-fingers.png" alt="Giot Logo">
+                    <h2>GIOT GAMES</h2>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer-social">
+                        <img src="../../../../assets/icons/instagram.png" alt="instagram">
+                    </div>
+    
+                    <div class="footer-social">
+                        <img src="../../../../assets/icons/facebook.png" alt="facebook">
+                    </div>
+    
+                    <div class="footer-social">
+                        <img src="../../../../assets/icons/x.png" alt="x">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider"></div>
+
+            <div class="footer__tag">
+                <span>PALORANT</span>
+            </div>
+
+            <div class="copyright">
+                <p>2025 Giot Games, Inc GIOT GAMES and any associated logos are trademarks, service marks, and/or</p>
+                <p>registered trademarks of Giot Games, Inc</p>
+            </div>
+
+            <div class="footer__time">
+                <span>UTC 2025.04.08 11:39:05</span>
+                <span>WIB 2025.04.08 18:39:05</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../scripts/agents-detail.js" type="module"></script>
+    <script src="../../../../scripts/main.js"></script>
+</body>
+
+</html>
