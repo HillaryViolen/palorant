@@ -9,6 +9,7 @@ body {
 
 #game-info a {
     color: #00F0FF;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
 }
 
 .maps__container {
@@ -20,13 +21,14 @@ body {
 .maps__container h1 {
     color: #9747FF;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(151, 71, 255, 0.5);
     font-family: 'Russo-one', sans-serif;
     font-family: 100;
+    padding-top: 3%;
 }
 
 .maps__navbar {
@@ -67,7 +69,7 @@ body {
 }
 
 .maps-btn:hover {
-    color: #016b73;
+    color: #00F0FF;
 }
 
 .maps-btn:hover::after {
@@ -81,12 +83,12 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #016b73;
+    background-color: #00F0FF;
     transition: width 0.3s;
 }
 
 .maps-btn.active {
-    color: #016b73;
+    color: #00F0FF;
 }
 
 .maps-btn.active::after {
@@ -251,7 +253,7 @@ body {
 
 .maps__prev:hover,
 .maps__next:hover {
-    background-color: #016b73;
+    background-color: #00F0FF;
 }
 
 .maps__dropdown {

@@ -54,14 +54,15 @@ body {
 }
 
 
-/* navbar */
+/* NAVBAR */
+
 .navbar {
     background: black;
-    height: 80px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -80,9 +81,8 @@ body {
 
 #navbar__logo {
     padding: 0px;
-    width: 120px;
-    height: 120px;
-    margin-top: -8px;
+    width: 100px;
+    height: 100px;
 }
 
 #navbar__logo img {
@@ -134,6 +134,7 @@ body {
 
 .navbar__links:hover {
     color: #00F0FF;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
     transition: all 0.3 ease;
 }
 
@@ -211,9 +212,9 @@ body {
 }
 
 .button:hover {
-    background: #9747FF;
-    transition: all 0.3s ease;
+    color: #00F0FF;
 }
+
 
 .navbar__links:hover {
     color: #00F0FF;
@@ -230,6 +231,8 @@ body {
     transform: skewX(-40deg);
     z-index: -1;
 }
+
+/* FOOTER */
 
 .footer {
     background-color: #0a0a0a;
@@ -367,8 +370,8 @@ body {
         top: 80px;
         right: 0;
         background: rgb(39, 37, 37);
+        opacity: 0.95;
         transition: all 0.5s ease-in-out;
-        height: 80vh;
         overflow-y: auto;
         z-index: 100;
         margin-top: 0;
@@ -380,8 +383,12 @@ body {
         top: 80px;
     }
 
-    #navbar__logo {
-        padding-left: 25px;
+
+    #navbar__logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 35px;
     }
 
     .navbar__toggle .bar {
@@ -406,6 +413,10 @@ body {
         opacity: 1;
     }
 
+    .navbar__edge{
+        left: -55px;
+    }
+
     #mobile-menu {
         position: absolute;
         top: 20%;
@@ -421,8 +432,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        height: 80px;
+        width: 60%;
+        height: 60px;
         margin: 0;
     }
 
@@ -480,7 +491,7 @@ body {
     }
 
     .navbar__edge {
-        width: 200px;   
+        left: -70px;
     }
 
     .footer {
@@ -507,6 +518,15 @@ body {
     .navbar__menu {
         width: 65%;
     }
+    
+    .navbar__edge{
+        left: -100px;
+    }
+
+    #navbar__logo{
+        margin-left: -10px;
+    }
+
 
 }
 

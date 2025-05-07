@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Exo-2', sans-serif; */
 }
 
 body {
@@ -15,10 +14,9 @@ body {
 
 #home a {
     color: #00F0FF;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
 }
 
-
-/* section 1 */
 @font-face {
     font-family: 'Ethnocentric';
     src: url('../assets/fonts/ethnocentric\ rg.ttf') format('truetype');
@@ -61,7 +59,7 @@ body {
     font-style: normal;
 }
 
-
+/* SECTION 1 */
 .main {
     width: 100%;
     height: 100vh;
@@ -117,8 +115,7 @@ body {
 
 
 
-/* section 2 */
-
+/* SECTION 2 */
 
 .banner__overlay {
     position: absolute;
@@ -154,10 +151,7 @@ body {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #FFAA5C;
-    background: linear-gradient(90deg, #FFAA5C, #FF4DED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #a2a4a5;
     font-family: 'Exo-2', sans-serif;
 }
 
@@ -200,7 +194,7 @@ body {
     border: 3px solid transparent;
     background: linear-gradient(145deg, #050510 0%, #1A1A2E 100%);
     border-image: linear-gradient(45deg, #9D50FF, #00F0FF) 1;
-  
+
 }
 
 .banner::before {
@@ -219,7 +213,7 @@ body {
 }
 
 
-/* news */
+/* SECTION 3 */
 
 .news {
     padding: 30px;
@@ -254,6 +248,13 @@ body {
     margin-bottom: 3rem;
     flex-wrap: wrap;
     filter: drop-shadow(-10px 10px 0px #00F0FF);
+    transition: all 0.3s ease;
+}
+
+.news__main:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px #016b73;
+
 }
 
 .news__main-container {
@@ -274,7 +275,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 .news-main__date {
@@ -289,9 +290,9 @@ body {
     color: #ece8e1;
     background: linear-gradient(90deg, #FFAA5C, #FF4DED);
     -webkit-background-clip: text;
+    background-clip: text;
     font-family: 'Exo-2', sans-serif;
     font-weight: bold;
-    /* text-shadow: 0 0 10px rgb(159, 156, 156); */
 }
 
 .news-main__description {
@@ -314,6 +315,8 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     min-width: 280px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .news__card:hover {
@@ -362,7 +365,7 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
     margin: 2px;
-    
+
 }
 
 .news-button .button-text {
@@ -370,7 +373,7 @@ body {
     padding: 12px 30px;
     position: relative;
     z-index: 3;
-    background: black;  
+    background: black;
     color: #FFD197;
     font-weight: 500;
     text-transform: uppercase;
@@ -450,26 +453,11 @@ body {
 }
 
 .news-button:hover {
-    /* transform: translateY(-3px); */
     box-shadow: 0 5px 10px gray;
 }
 
-/* .news__button:hover::before,
-.news__button:hover::after,
-.news__button:hover .corner-top-right,
-.news__button:hover .corner-bottom-left{
-    border: 2px solid #00F0FF;
-    transition: border-color 0.3s ease, transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
-}
 
-.news__button:hover .center-top,
-.news__button:hover .center-bottom {
-    background-color: #00F0FF;    
-    transition: background-color 0.3s ease, transform 0.3s ease;
-} */
-
-
-/* agent */
+/* SECTION 4 */
 .agents {
     background-color: rgb(28, 27, 27);
     color: #ece8e1;
@@ -595,9 +583,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 25px;
     line-height: 1.3;
-    background: linear-gradient(to right, #FFAA5C, #FF4DED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    color: #a2a4a5;
     font-family: 'Exo-2', sans-serif;
 }
 
@@ -634,7 +620,7 @@ body {
     padding: 12px 30px;
     position: relative;
     z-index: 3;
-    background: #ece8e1;  
+    background: #ece8e1;
     color: #9747FF;
     font-weight: 500;
     text-transform: uppercase;
@@ -718,7 +704,7 @@ body {
 }
 
 
-/* maps */
+/* SECTION 5 */
 
 .maps__container {
     background-color: #ECE8E1;
@@ -802,7 +788,7 @@ body {
     padding: 12px 30px;
     position: relative;
     z-index: 3;
-    background: #0C0C17;  
+    background: #0C0C17;
     color: #FFD197;
     font-weight: 500;
     text-transform: uppercase;
@@ -888,6 +874,8 @@ body {
     height: 500px;
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .maps-slide {
@@ -964,8 +952,9 @@ body {
 
 .maps__prev:hover,
 .maps__next:hover {
-    background: #016b73;
-    transform: scale(1.1);
+    background: #00F0FF;
+    transform: scale(1.05);
+    border: none;
 }
 
 .maps__prev img,
@@ -975,9 +964,20 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* responsive */
+/* RESPONSIVE */
 
 @media screen and (max-width: 1024px) {
+    .banner__text {
+        padding: 1rem;
+    }
+
+    .video__frame {
+        height: 70%;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
     .news__container {
         display: flex;
         flex-direction: column;
@@ -1016,17 +1016,15 @@ body {
     .news-main__text {
         padding: 15px;
     }
-
 }
-
 
 @media screen and (max-width: 768px) {
 
-    .main__text h2{
+    .main__text h2 {
         font-size: 1.7rem;
     }
 
-    .main__text h3{
+    .main__text h3 {
         font-size: 3rem;
     }
 
@@ -1049,7 +1047,7 @@ body {
     .banner__text {
         width: 100%;
         font-size: 2rem;
-        margin-bottom: 30px;
+        margin-bottom: -50px;
         padding: 1rem 0;
         align-items: center;
         text-align: center;
@@ -1065,12 +1063,11 @@ body {
 
     .banner__text p {
         font-size: 0.9rem;
-        margin-bottom: 1.5rem;
     }
 
     .banner__video {
         width: 100%;
-        height: 200px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1279,11 +1276,11 @@ body {
 }
 
 @media screen and (max-width:576px) {
-    .main__text h2{
+    .main__text h2 {
         font-size: 1.2rem;
     }
 
-    .main__text h3{
+    .main__text h3 {
         font-size: 2.3rem;
     }
 
@@ -1342,6 +1339,3 @@ body {
         font-size: 12px;
     }
 }
-
-
-

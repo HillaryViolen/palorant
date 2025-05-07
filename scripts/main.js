@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
 
-
-
     if (!slides.length || !mapsPrev || !mapsNext || !slideContainer) return;
 
     function showSlide(index) {
@@ -94,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     slideContainer.addEventListener('mouseleave', () => {
-        slideInterval = setInterval(nextSlide, 5000);
+        slideInterval = setInterval(nextSlide, 3000);
     });
 
     showSlide(currentIndex);
-    slideInterval = setInterval(nextSlide, 5000);
+    slideInterval = setInterval(nextSlide, 3000);
 });

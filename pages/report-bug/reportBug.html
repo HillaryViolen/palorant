@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Bugs</title>
+    <title>REPORT BUGS</title>
+    <link rel="icon" href="../../assets/icons/palorant-logo.png" type="image/png">
     <link rel="stylesheet" href="./styles/reportBugs.css">
     <link rel="stylesheet" href="../../styles/navbar.css">
 </head>
@@ -30,7 +31,7 @@
                     <a href="#" class="navbar__links">GAME INFO <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown__menu">
                         <li><a href="../agents/agents.html">AGENTS</a></li>
-                        <li><a href="../mapS/map/craven/craven.html">MAPS</a></li>
+                        <li><a href="../maps/map/craven/craven.html">MAPS</a></li>
                     </ul>
                 </li>
                 <li class="navbar__item" id="news">
@@ -40,7 +41,7 @@
                     <a href="./reportBug.html" class="navbar__links">REPORT BUG</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">PLAY NOW</a>
+                    <a href="../../index.html" class="button">PLAY NOW</a>
                 </li>
             </ul>
             <div class="navbar__edge"></div>
@@ -58,31 +59,38 @@
                 <div class="report__frame">
                     <label for="username">Username</label>
                     <input type="text" placeholder="Username" id="inputUsername">
+                    <span class="warning" id="warningUsername"></span>
                 </div>
 
                 <div class="report__frame">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Email" id="inputEmail">
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Email" id="inputEmail">
+                    <span class="warning" id="warningEmail"></span>
                 </div>
 
                 <div class="report__frame">
                     <label for="server">Server</label>
                     <select id="server" required>
-                        <option value="">Select server</option>
+                        <option value=" ">Select server</option>
                         <option value="na">America</option>
                         <option value="eu">Europe</option>
                         <option value="asia">Asia</option>
                     </select>
+                    <span class="warning" id="warningServer"></span>
                 </div>
 
                 <div class="report__frame">
                     <label for="description">Bug Description</label>
                     <textarea id="inputDescription" placeholder="Bug description"></textarea>
+                    <span class="warning" id="warningDescription"></span>
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" id="followUp">
-                    <label for="followUp">I agree to receive follow-up emails</label>
+                <div class="checkbox__container">
+                    <div class="checkbox">
+                        <input type="checkbox" id="followUp">
+                        <label for="followUp">I agree to receive follow-up emails</label>
+                    </div>
+                    <span class="warning" id="warningCheckbox"></span>
                 </div>
 
                 <button type="submit">Submit Report</button>
