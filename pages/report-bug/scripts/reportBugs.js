@@ -14,7 +14,7 @@ server.addEventListener("change", function () {
 const setWarning = (id, message) => {
     const warn = document.getElementById(id);
 
-    if(warn) warn.textContent = message;
+    if (warn) warn.textContent = message;
 };
 
 const clearWarnings = () => {
@@ -25,17 +25,21 @@ reportBug.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
+
+    if (confirm("Thankyou for reporting bug!")) {
+        window.location.reload();
+    }
 });
 
 username.addEventListener('blur', () => {
     const val = username.value.trim();
-    if(val === ''){
+    if (val === '') {
         setWarning('warningUsername', 'Username is required');
     }
-    else if(val.length < 8){
+    else if (val.length < 8) {
         setWarning('warningUsername', 'Username must be at least 8 characters');
     }
-    else{
+    else {
         setWarning('warningUsername', '');
     }
 });
@@ -48,7 +52,7 @@ email.addEventListener('blur', () => {
     else if (!val.includes('@') || !val.endsWith('.com')) {
         setWarning('warningEmail', 'Email must be valid (contain "@" and end with ".com")');
     }
-    else{
+    else {
         setWarning('warningEmail', '');
     }
 });
@@ -58,7 +62,7 @@ server.addEventListener('blur', () => {
     if (val === '' || val === ' ') {
         setWarning('warningServer', 'Please select a server');
     }
-    else{
+    else {
         setWarning('warningServer', '');
     }
 });
@@ -77,7 +81,7 @@ followUp.addEventListener('change', () => {
     if (!followUp.checked) {
         setWarning('warningCheckbox', 'You must agree to receive follow-up emails');
     }
-    else{
+    else {
         setWarning('warningCheckbox', '');
     }
 });
@@ -92,16 +96,16 @@ const validateInputs = () => {
     const serverValue = server.value.trim();
     const descriptionValue = description.value.trim();
 
-    if(usernameValue === "") {
+    if (usernameValue === "") {
         setWarning('warningUsername', 'Username is required');
         isValid = false;
     }
-    else if(usernameValue.length < 8){
+    else if (usernameValue.length < 8) {
         setWarning('warningUsername', 'Username must be at least 8 characters');
         isValid = false;
     }
 
-    if(emailValue === "") {
+    if (emailValue === "") {
         setWarning('warningEmail', 'Email is required');
         isValid = false;
     }
@@ -110,7 +114,7 @@ const validateInputs = () => {
         isValid = false;
     }
 
-    if(serverValue === "" || serverValue === "") {
+    if (serverValue === "" || serverValue === "") {
         setWarning('warningServer', 'Please select a server');
         isValid = false;
     }
